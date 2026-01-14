@@ -8,7 +8,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 import numpy as np
-import matplotlib.pyplot as plt
+
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -54,9 +54,6 @@ def load_image(image_path, size=(256, 256)):
     colors_tensor = torch.tensor(colors, dtype=torch.float32)
     return coords_tensor, colors_tensor, img_np, (H, W)
 
-import os
-import zipfile
-import torch
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -177,3 +174,4 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = ImageReconstructionApp(root)
     root.mainloop()
+
