@@ -1,4 +1,4 @@
-# Neural Image Compressor (Coordinate MLP + Fourier Features)
+# Neural Network Image Compressor (Coordinate MLP + Fourier Features)
 
 This project is an experiment in **neural image compression** using a small neural network to represent an image as a function.
 
